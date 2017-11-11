@@ -1,0 +1,11 @@
+[Unit]
+Description=Email After Reboot
+DefaultDependencies=no
+After=postfix.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/scripts/email_boot.sh
+
+[Install]
+WantedBy=multi-user.target
