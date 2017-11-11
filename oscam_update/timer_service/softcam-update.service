@@ -1,0 +1,9 @@
+[Unit]
+Description=update softcam.key
+
+[Service]
+Type=simple
+ExecStart=/opt/oscam_update/softcam_update.sh
+
+[Install]
+WantedBy=multi-user.target
